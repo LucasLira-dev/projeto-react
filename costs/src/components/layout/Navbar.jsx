@@ -18,7 +18,7 @@ function Navbar(){
                     </li>
 
                     <li className="text-white hover:text-[#FFBB33]">
-                         <Link to="/">Projetos</Link>
+                         <Link to="/projects">Projetos</Link>
                     </li>
 
                     <li className="text-white hover:text-[#FFBB33]">
