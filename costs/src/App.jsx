@@ -5,38 +5,30 @@ import Contact from './components/pages/Contact';
 import NewProject from './components/pages/NewProject';
 
 import Container from './components/layout/Container';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Projects from './components/pages/Projects';
+import './index.css'
 
 function App() {
   return (
+    <div className='flex flex-col min-h-screen'>
     <BrowserRouter>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/company">Company</Link>
-          </li>
-          <li>
-            <Link to="/contatos">Contatos</Link>
-          </li>
-          <li>
-            <Link to="/newproject">New Project</Link>
-          </li>
-        </ul>
-      </nav>
-
+    
+      <Navbar/>
       <Container>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/company" element={<Company />} />
         <Route path="/contatos" element={<Contact />} />
         <Route path="/newproject" element={<NewProject />} />
       </Routes>
       </Container>
       
-      <p> Footer </p>
+    <Footer/>
     </BrowserRouter>
+    </div>
   );
 }
 
