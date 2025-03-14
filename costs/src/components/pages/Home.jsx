@@ -14,6 +14,8 @@ function Home(){
 
         <img src={savings} alt="Costs" className='w-[350px] m-[2em]' />
        </section>
+
+    
     )
 }
 
