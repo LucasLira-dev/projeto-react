@@ -16,6 +16,11 @@ function Select({ text, name, options, handleOnChange, value }){
             className='p-[0.7em] border-none 
             '>
                 <option> Selecione uma opção </option>
+                {options.map(option => (
+                    <option key={option.id} value={option.id}>
+                        {option.name}
+                    </option>
+                ))}
             </select>
         </div>
     )
